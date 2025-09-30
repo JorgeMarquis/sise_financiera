@@ -75,6 +75,7 @@ namespace Financiera.BusinessLogic
             if (tipoCliente.Nombre.Contains("CORPORATIVO") && tipoPrestamo.Nombre.Contains("Préstamo MI-NEGOCIO"))
             {
                 prestamo.Tasa -= 3;
+                if (prestamo.Tasa < 0) prestamo.Tasa = 0;
             }
 
             //  REGISTRO DEL PRESTAMO
@@ -86,16 +87,17 @@ namespace Financiera.BusinessLogic
             decimal porcentajeInteres = prestamo.Tasa / 100;
             decimal importeInteres= cuotaMensual * porcentajeInteres;
             CuotaPrestamo cuota;
+
             for (int idx = 0; idx <= prestamo.Plazo; idx++)
             {
                 cuota = new CuotaPrestamo()
                 {
                     PrestamoID = nuevoID,
-                    NumeroCuota=idx,
-                    Importe=cuotaMensual,   
-                    ImporteInteres=importeInteres,
-                    Estado="P",
-                    FechaPago=prestamo.FechaDeposito.AddMonths(idx)
+                    NumeroCuota = idx,
+                    Importe = cuotaMensual,   
+                    ImporteInteres = importeInteres,
+                    Estado = "P",
+                    FechaPago = prestamo.FechaDeposito.AddMonths(idx)
                 };
                 cuotaDB.Registrar(cuota);
             }
