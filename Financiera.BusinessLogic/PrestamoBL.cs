@@ -15,13 +15,15 @@ namespace Financiera.BusinessLogic
         private readonly CuotasPrestamoRepositorio cuotaDB;
         private readonly ClienteRespositorio clienteDB;
         private readonly TipoClienteRepositorio tipoClienteDB;
+        private readonly TipoPrestamoRepositorio tipoPrestamoDB;
 
         public PrestamoBL(IConfiguration config)
         {
             prestamoDB = new PrestamoRepositorio(config);
             cuotaDB = new CuotasPrestamoRepositorio(config);
-            clienteDB= new ClienteRespositorio(config);
-            tipoClienteDB= new TipoClienteRepositorio(config);
+            clienteDB = new ClienteRespositorio(config);
+            tipoClienteDB = new TipoClienteRepositorio(config);
+            tipoPrestamoDB = new TipoPrestamoRepositorio(config);
         }
 
         public List<Prestamo> Listar()
@@ -50,22 +52,30 @@ namespace Financiera.BusinessLogic
             }
             
             //BUSCAR EL TIPO DE CLIENTE
-            TipoCliente tipoCliente=tipoClienteDB.ObtenerPorID(cliente.TipoClienteID);
+            TipoCliente tipoCliente = tipoClienteDB.ObtenerPorID(cliente.TipoClienteID);
             if (tipoCliente == null)
             {
                 throw new Exception("El tipo de cliente no existe");
             }
 
-
             // SI EL CLIENTE ES INDIVIDUAL EL PLAZO MINIMO PARA UN PRESTAMO ES DE 24 MESES
-            if (tipoCliente.Nombre.Contains("INDIVIDUAL")&& prestamo.Plazo<24)
+            if (tipoCliente.Nombre.Contains("INDIVIDUAL") && prestamo.Plazo < 24)
             {
                 throw new Exception("El plazo minimo para el tipo de cliente asociado es de 24 meses");
             }
 
+            // Busca el tipo de Prestamo
+            TipoPrestamo tipoPrestamo = tipoPrestamoDB.ObtenerPorID(prestamo.TipoPrestamoID);
+            if (tipoPrestamo == null)
+            {
+                throw new Exception("El tipo de Prestamo no existe");
+            }
+
             //si el cliente es coorporativo y el prestamo es de tipo mi negocio,entonces se le asigna un 3% menos adcional
-
-
+            if (tipoCliente.Nombre.Contains("CORPORATIVO") && tipoPrestamo.Nombre.Contains("Préstamo MI-NEGOCIO"))
+            {
+                prestamo.Tasa -= 3;
+            }
 
             //  REGISTRO DEL PRESTAMO
             int nuevoID = prestamoDB.Registrar(prestamo);
@@ -89,8 +99,6 @@ namespace Financiera.BusinessLogic
                 };
                 cuotaDB.Registrar(cuota);
             }
-
-
             return nuevoID;
         }
     }
