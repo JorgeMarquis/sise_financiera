@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q3gG1tLloS8SIJ5Kk5MOXcggtbDK4+XwAJv0IUw4a6j/viAmJuE32pjJXnhjNINw9TfnIBYj/cJvVQbaM8xMFg==",
+  "dgSpecHash": "wSQ6udHUEsE++8jSwIjCV/aoR42g0cUg+yuo+/RGeK1i3RDLg9wFh0jEwkM8NCeQF5i4Muj5Mb/5138hjMwSPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.WebApp\\Financiera.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.WebApp\\Financiera.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alumno.CHANGE_NAME\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Alumno.CHANGE_NAME\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

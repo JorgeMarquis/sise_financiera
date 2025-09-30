@@ -1704,11 +1704,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.ConsoleApp\\Financiera.ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.ConsoleApp\\Financiera.ConsoleApp.csproj",
       "projectName": "Financiera.ConsoleApp",
-      "projectPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.ConsoleApp\\Financiera.ConsoleApp.csproj",
+      "projectPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.ConsoleApp\\Financiera.ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Alumno.CHANGE_NAME\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.ConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1729,11 +1729,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.BusinessLogic\\Financiera.BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.BusinessLogic\\Financiera.BusinessLogic.csproj"
+            "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.BusinessLogic\\Financiera.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.BusinessLogic\\Financiera.BusinessLogic.csproj"
             },
-            "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.Model\\Financiera.Model.csproj": {
-              "projectPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.Model\\Financiera.Model.csproj"
+            "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.Model\\Financiera.Model.csproj": {
+              "projectPath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.Model\\Financiera.Model.csproj"
             }
           }
         }

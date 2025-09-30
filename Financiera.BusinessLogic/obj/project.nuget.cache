@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SmfEvgfj7VeKV0S9NhwytnI8Jx2PYzjYC4UjiBVDkQ80XNY2h5bh5RDmhf2VzXMKQXCOpHa9dA+de2+vndHMFw==",
+  "dgSpecHash": "2BKmn8OK9h0WOZPs3NyXMl/5UG6oHL+cqJquN43vipU8mlla/WvDJnCyxyBMAfkbloOuSlam10bkMPFcqJrsMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\NCapas\\NCapas\\Financiera\\Financiera.BusinessLogic\\Financiera.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\Alumno.CHANGE_NAME\\Desktop\\sise_financiera-main\\Financiera\\Financiera.BusinessLogic\\Financiera.BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alumno.CHANGE_NAME\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Alumno.CHANGE_NAME\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
